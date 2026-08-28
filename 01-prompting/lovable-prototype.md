@@ -1,4 +1,4 @@
-# refer to the claude-prototype.md file
+# Refer to the claude-prototype.md file
 # Lovable Prototype · Juno
 
 > Module 1 · Prompting. The clickable Lovable prototype that brings the system prompt to life.
