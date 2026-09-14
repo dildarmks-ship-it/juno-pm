@@ -14,7 +14,7 @@ A plan sponsor's benefit change request hits the account team intake queue (emai
 
 ## The flow
 
-1. 1. RAG retrieval over the client's signed contract + benefit design exhibits (M3 KB), top-K = 6, latency target under 8 sec.
+1. RAG retrieval over the client's signed contract + benefit design exhibits (M3 KB), top-K = 6, latency target under 8 sec.
 2. Clause mapping - each ask in the request gets matched to a contract clause and tagged In scope / Needs amendment / Out of scope.
 3. Impact scoring - member disruption, adjudication config effort, revenue and rebate exposure.
 4. Confidence check - score under 30 goes to "needs analyst review"; 70 and above auto-classifies with a clause citation.
