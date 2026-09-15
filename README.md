@@ -14,7 +14,7 @@ This repo is my final project for the **AI Product Management Certification**. E
 
 ### M1 · Prompting
 - **System prompt** — [`01-prompting/system-prompt.md`](01-prompting/system-prompt.md)
-- **Prototype debrief** — [`01-prompting/prototype.md`](01-prompting/claude-prototype.md)
+- **Prototype debrief** — [`01-prompting/claude-prototype.md`](01-prompting/claude-prototype.md)
 - **Claude Prototype** — https://claude.ai/code/artifact/2debaccf-2de8-41d0-975f-dbbccb6b8524
 
 ### M2 · Strategy
