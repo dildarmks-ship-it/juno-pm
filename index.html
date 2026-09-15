@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juno PM — AI Associate PM for RocketShip</title>
+<meta name="description" content="Juno turns raw customer signal into an evidence-ranked backlog and draft PRDs, citing a source for every priority. Final project, AI Product Management Certification.">
+<style>
+  :root{
+    --bg:#f7f6f2; --card:#ffffff; --ink:#1c1b18; --muted:#66625a; --line:#e4e1d9;
+    --accent:#1f5f8b; --accent-ink:#ffffff; --ok:#2f7d4f; --warn:#a15c00; --block:#a83232;
+    --chip:#eef2f6; --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#14140f; --card:#1e1e18; --ink:#ecebe5; --muted:#a39f95; --line:#33322b;
+           --accent:#6fb1e0; --accent-ink:#0f1a24; --chip:#26302a; --ok:#6fcf8f; --warn:#e8a94a; --block:#f07a7a; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  a{color:var(--accent)}
+  .wrap{max-width:1040px;margin:0 auto;padding:40px 20px 72px}
+  header{padding-bottom:28px;border-bottom:1px solid var(--line);margin-bottom:36px}
+  .eyebrow{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+  h1{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:0 0 14px;letter-spacing:-.01em}
+  .lede{font-size:18px;max-width:760px;margin:0 0 18px}
+  .byline{color:var(--muted);font-size:14px;margin:0 0 20px}
+  .cta{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+  .cta.secondary{background:transparent;color:var(--accent);border:1px solid var(--accent);margin-left:8px}
+  h2{font-size:22px;margin:44px 0 14px;letter-spacing:-.01em}
+  h3{font-size:16px;margin:0 0 8px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+  .card .tag{display:inline-block;font:600 12px/1 var(--mono);background:var(--chip);padding:5px 8px;border-radius:6px;margin-bottom:10px}
+  .card ul{margin:0;padding-left:18px}
+  .card li{margin:4px 0}
+  .stack{display:grid;gap:12px}
+  .kv{display:grid;grid-template-columns:150px 1fr;gap:6px 16px;margin:0}
+  .kv dt{font-weight:600}
+  .kv dd{margin:0}
+  @media (max-width:560px){.kv{grid-template-columns:1fr}}
+  .metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+  .metric{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .metric .num{font-size:24px;font-weight:700;letter-spacing:-.01em}
+  .metric .lbl{color:var(--muted);font-size:13px}
+  .redlines li{margin:6px 0}
+  .badge{display:inline-block;font:600 11px/1 var(--mono);padding:4px 7px;border-radius:5px;margin-right:6px;vertical-align:middle}
+  .badge.block{background:var(--block);color:#fff}
+  .badge.soft{background:var(--warn);color:#fff}
+  .muted{color:var(--muted)}
+  pre{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;overflow-x:auto;font:13px/1.5 var(--mono)}
+  footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">AI Product Management Certification · Final Project</p>
+  <h1>Juno PM</h1>
+  <p class="lede">Juno is an AI Associate PM at RocketShip that turns raw customer signal — Slack <code>#escalations</code> and <code>#voice-of-customer</code>, Zendesk P0/P1 tickets, and interview transcripts — into an evidence-ranked backlog and draft PRDs, citing a source for every priority.</p>
+  <p class="byline">Manoj Singh · AI Product Management Cohort · Aug 17 – Sep 2, 2026</p>
+  <a class="cta" href="https://claude.ai/code/artifact/2debaccf-2de8-41d0-975f-dbbccb6b8524">Open the Claude prototype</a>
+  <a class="cta secondary" href="https://github.com/dildarmks-ship-it/juno-pm">View the repo</a>
+</header>
+
+<h2>Module artefacts</h2>
+<div class="grid">
+  <div class="card"><span class="tag">M1 · Prompting</span>
+    <ul>
+      <li><a href="https://github.com/dildarmks-ship-it/juno-pm/blob/main/01-prompting/system-prompt.md">System prompt</a></li>
+      <li><a href="https://github.com/dildarmks-ship-it/juno-pm/blob/main/01-prompting/claude-prototype.md">Prototype debrief</a></li>
+      <li><a href="https://claude.ai/code/artifact/2debaccf-2de8-41d0-975f-dbbccb6b8524">Claude prototype</a></li>
+    </ul></div>
+  <div class="card"><span class="tag">M2 · Strategy</span>
+    <ul>
+      <li><a href="https://github.com/dildarmks-ship-it/juno-pm/blob/main/02-strategy/decision-matrix.md">Decision matrix</a></li>
+      <li><a href="https://github.com/dildarmks-ship-it/juno-pm/blob/main/02-strategy/strategy-one-pager.md">AI Strategy one-pager</a></li>
+    </ul></div>
+  <div class="card"><span class="tag">M3 · RAG / AI PRD</span>
+    <ul>
+      <li><a href="https://github.com/dildarmks-ship-it/juno-pm/blob/main/03-rag-prd/prd.md">AI PRD</a></li>
+    </ul></div>
+  <div class="card"><span class="tag">M4 · AI-Native UX</span>
+    <ul>
+      <li><a href="https://github.com/dildarmks-ship-it/juno-pm/blob/main/04-ai-ux/user-flow.md">AI user flow</a></li>
+      <li><a href="https://github.com/dildarmks-ship-it/juno-pm/blob/main/04-ai-ux/trust-gaps.md">Trust-gap mitigations</a></li>
+    </ul></div>
+  <div class="card"><span class="tag">M5 · Agentic Workflows</span>
+    <ul>
+      <li><a href="https://github.com/dildarmks-ship-it/juno-pm/blob/main/05-agentic-workflows/awspec.md">Agent Workflow Spec (AWSpec)</a></li>
+      <li><a href="https://github.com/dildarmks-ship-it/juno-pm/blob/main/05-agentic-workflows/agent-control-panel.md">Agent Control Panel</a></li>
+    </ul></div>
+  <div class="card"><span class="tag">M6 · Evals &amp; Guardrails</span>
+    <ul>
+      <li><a href="https://github.com/dildarmks-ship-it/juno-pm/blob/main/06-evals/eval-stack.md">Eval stack</a></li>
+      <li><a href="https://github.com/dildarmks-ship-it/juno-pm/blob/main/06-evals/human-rubric.md">Human evaluation rubric</a></li>
+    </ul></div>
+</div>
+
+<h2>PM execution plan</h2>
+<div class="stack">
+  <div class="card">
+    <h3>Where Juno is today</h3>
+    <ul>
+      <li><strong>Copilot, not agent (M2).</strong> Juno drafts a ranked, cited backlog; the PM approves before anything publishes.</li>
+      <li>A clickable prototype (M1) runs the full harness deterministically: visible tool trace, bounded 5-turn loop, a <code>write_roadmap</code> confirmation gate, and a verification gate that either cites the strategy doc or badges the insight “Unverified.”</li>
+      <li>The harness is fully specified (M3 PRD, 6 surfaces). The first agentic workflow — daily P0 triage into a top-3 risk list — is specced in M5 (ReAct, human-in-the-loop), with the M6 eval stack designed around it.</li>
+      <li><strong>Not yet in production:</strong> the live RAG backend over the RocketShip corpus. Today's grounding runs against a pasted strategy document, not the hourly-synced corpus described in M3.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>What ships next (next 2 sprints)</h3>
+    <p><strong>Sprint 1 — make the grounding real.</strong> Wire <code>search_strategy()</code> / <code>read_tickets()</code> to the actual corpus (Strategy One-Pager in git, Zendesk P0/P1, Slack #voice-of-customer), including the 24h “may be stale” citation label and the M3 fallback: if the strategy source is unreachable, rank nothing. Ship the verification gate live — verbatim-clause check, “Unverified” badge, and <code>write_roadmap()</code> rejecting unverified items.</p>
+    <p><strong>Sprint 2 — the first agent loop.</strong> Stand up the M5 P0-triage workflow: ReAct loop over #escalations, top-3 risk list to #pm-daily, Jira stubs, with the 5-turn ceiling, 3-failure escalation, 90s timeout, and confidence routing (≥80% auto-post, 70–79% review channel, &lt;70% PM approval). Permissions stay where M3 set them: read/draft auto, write confirm, send blocked.</p>
+    <p class="muted">Scope stays M2's V1: rank the existing backlog with citations, surface under-cited items, flag Slack↔Jira conflicts. Out: headcount decisions and customer-facing comms.</p>
+  </div>
+</div>
+
+<h2>What I watch</h2>
+<div class="metrics">
+  <div class="metric"><div class="num">2h → 30 min</div><div class="lbl">Weekly prioritisation cycle time (target −75%)</div></div>
+  <div class="metric"><div class="num">&lt;10%</div><div class="lbl">Decisions reversed within 1 week</div></div>
+  <div class="metric"><div class="num">≥90%</div><div class="lbl">Prioritised items with ≥2 cited sources</div></div>
+  <div class="metric"><div class="num">≥90%</div><div class="lbl">Golden-set accuracy (M6)</div></div>
+  <div class="metric"><div class="num">≥4.0 / 5</div><div class="lbl">Human eval on accuracy + safety</div></div>
+  <div class="metric"><div class="num">≥80% 👍</div><div class="lbl">Thumbs-up · regenerate ≤15% · abandon ≤20%</div></div>
+  <div class="metric"><div class="num">p95 &lt; 8s</div><div class="lbl">Latency</div></div>
+  <div class="metric"><div class="num">≤ $0.12 / run</div><div class="lbl">≈ $58/mo at 12 PMs × ~40 runs</div></div>
+</div>
+<p class="muted"><strong>Evidence balance:</strong> reject any ranking where &lt;20% of cited sources come from a single source type (guards the training-data-lag skew from M2).</p>
+
+<h2>Red lines — what blocks shipping</h2>
+<div class="card">
+  <ul class="redlines">
+    <li><span class="badge block">BLOCK</span> Any PII leakage (0% tolerance) — auto-block.</li>
+    <li><span class="badge block">BLOCK</span> Any critical safety fail (a “1” on the human-eval safety dimension) — auto-block.</li>
+    <li><span class="badge block">BLOCK</span> Citation check fails.</li>
+    <li><span class="badge block">BLOCK</span> Golden-set accuracy &lt; 90%.</li>
+    <li><span class="badge block">BLOCK</span> &gt;50% of a run's priorities unverified — banner and do not ship the ranking; treat the strategy doc as missing, stale, or wrong.</li>
+    <li><span class="badge block">BLOCK</span> Strategy source unreachable — rank nothing (no cached copy, no model judgement).</li>
+    <li><span class="badge block">BLOCK</span> <code>send</code> stays blocked until M6 evals produce a real precision number.</li>
+    <li><span class="badge soft">SOFT GATE</span> PM sign-off required: p99 latency &gt; 5s; off-brand tone flags &gt; 2%.</li>
+  </ul>
+</div>
+
+<h2>Governance</h2>
+<div class="card">
+  <dl class="kv">
+    <dt>Compliance</dt><dd>Excluded sources named on the record (Salesforce closed-lost notes, exec Slack DMs); 0% PII-leakage gate; no persistence of customer contracts or PII (M5 memory out of scope); per-team memory isolation.</dd>
+    <dt>Safety</dt><dd>Permission tiers priced by blast radius (read/draft auto, write confirm, send blocked); legal/contract language triggers refusal; any “churn / legal / security” thread requires PM approval.</dd>
+    <dt>Reliability</dt><dd>5-turn ceiling, escalate after 3 failed tool calls, 90s wall-clock timeout; a contradiction between two strategy clauses escalates to a human rather than being tie-broken by Juno; p95 &lt; 8s; no silent fallback.</dd>
+    <dt>Reputation</dt><dd>Nothing customer-facing in V1 (send blocked); a human approves the citation before any roadmap write; the whole system exists to kill “loudest voice in Slack” prioritisation.</dd>
+  </dl>
+</div>
+
+<h2>Build insights</h2>
+<div class="grid">
+  <div class="card"><h3>Friction point</h3><p>The lab assumed a build tool with a one-click backend and AI gateway. Without credits, I rebuilt the harness as a self-contained Claude artifact, so the “enable backend / Edge Function” step had no direct equivalent and had to be reframed — in Claude, the artifact itself is the runtime. It was also easy to conflate two different diffs: harness off vs on is not the same as strategy loaded vs empty.</p></div>
+  <div class="card"><h3>Key learning</h3><p>A harness turns an agent from a black box that just answers into a system you can watch (the tool trace), limit (the turn ceiling and permission tiers), and hold to a source of truth (the verification gate). A wrong draft costs two minutes; a wrong broadcast costs a week and can't be unsent — which is exactly why write is confirm and send is blocked.</p></div>
+  <div class="card"><h3>Aha moment</h3><p>The “Verified + Not Recommended” case — a real clause backs the item, yet it's still out of scope — was governance working as designed, not a bug. And the rule “never invent a clause to pass the check” only bites once a real model can hallucinate; the deterministic demo passes it for free. That gap is where the demo and the production agent diverge.</p></div>
+</div>
+
+<h2>Repo structure</h2>
+<pre>juno-pm/
+├── README.md                         ← dashboard + pitch
+├── index.html                        ← this page
+├── 01-prompting/
+│   ├── system-prompt.md              ← M1: Juno's system prompt
+│   └── claude-prototype.md           ← M1: prototype link + debrief
+├── 02-strategy/
+│   ├── decision-matrix.md            ← M2: build / buy / fine-tune / partner call
+│   └── strategy-one-pager.md         ← M2: AI strategy one-pager
+├── 03-rag-prd/
+│   └── prd.md                        ← M3: AI PRD with retrieval requirements
+├── 04-ai-ux/
+│   ├── user-flow.md                  ← M4: AI-native user flow
+│   └── trust-gaps.md                 ← M4: trust-gap mitigations
+├── 05-agentic-workflows/
+│   ├── awspec.md                     ← M5: Agent Workflow Spec
+│   └── agent-control-panel.md        ← M5: Agent Control Panel
+└── 06-evals/
+    ├── eval-stack.md                 ← M6: layered eval stack
+    └── human-rubric.md               ← M6: human evaluation rubric</pre>
+
+<footer>Certification submission — AI Product Management Certification · Manoj Singh, 2026</footer>
+</div>
+</body>
+</html>
