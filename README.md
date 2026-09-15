@@ -4,7 +4,11 @@
 
 _Manoj Singh · AI Product Management Cohort · Aug 17, 2026 - Sep 2, 2026_
 
-This repo is my final project for the **AI Product Management Certification**. Each module's artefact lives in its own folder; this README is the dashboard and the pitch.
+Repo: https://dildarmks-ship-it.github.io/juno-pm/
+
+This repo is my final project for the **AI Product Management Certification**. 
+
+Each module's artefact lives in its own folder; this README is the dashboard and the pitch.
 
 **How to use this template:** click **Use this template → Create a new repository**, name it `juno-pm`, and commit one module's artefact per session. Assemble this dashboard with the **Final Project Deliverables Builder** (paste its `README.md` output over this file).
 
